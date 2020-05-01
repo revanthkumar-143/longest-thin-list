@@ -1,0 +1,13 @@
+def longest(n):
+    a = list(map(str,input("\nEnter words : ").strip().split()))[:n] 
+    maxi_length=0
+    for i in a:
+        if len(a)>maxi_length:
+            max_length=len(i)
+    return max_length
+
+n=int(input())
+answer=longest(n)
+print(answer)
+    
+    
